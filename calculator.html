@@ -1,0 +1,44 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="calculator.js"></script>
+</head>
+<body class='row' id='body'>
+  <div class='container align-self-center' id='container'>
+    <div id='second-container'>
+      <div class='block' id='display'>0</div>
+      <div class='row'>
+        <div class='btn btn-danger col' id='clear' onclick="clearDisplay()">C</div>
+        <div class='btn btn-success col' id='divide' onclick="operations('÷')">÷</div>
+        <div class='btn btn-success col' id='multiply' onclick="operations('×')">×</div>
+        <div class='btn btn-success col' id='subtract' onclick="operations('-')">-</div>
+      </div>
+      <div class='row'>
+        <div class='btn btn-secondary col' id='seven' onclick="numbers(7)">7</div>
+        <div class='btn btn-secondary col' id='eight' onclick="numbers(8)">8</div>
+        <div class='btn btn-secondary col' id='nine' onclick="numbers(9)">9</div>
+        <div class='btn btn-success col' id='add' onclick="operations('+')">+</div>
+      </div>
+      <div class='row'>
+        <div class='btn btn-secondary col' id='four' onclick="numbers(4)">4</div>
+        <div class='btn btn-secondary col' id='five' onclick="numbers(5)">5</div>
+        <div class='btn btn-secondary col' id='six' onclick="numbers(6)">6</div>
+        <div class='col'></div>
+      </div>
+      <div class='row'>
+        <div class='btn btn-secondary col' id='one' onclick="numbers(1)">1</div>
+        <div class='btn btn-secondary col' id='two' onclick="numbers(2)">2</div>
+        <div class='btn btn-secondary col' id='three' onclick="numbers(3)">3</div>
+        <div class='btn btn-primary col' id='equals' onclick="result()">=</div>
+      </div>
+      <div class='row'>
+        <div class='btn btn-secondary col-6' id='zero' onclick="numbers(0)">0</div>
+        <div class='btn btn-secondary col' id='decimal' onclick="numbers('.')">.</div>
+        <div class='col-3'></div>
+      </div>
+    </div>
+  </div>
+</body>
